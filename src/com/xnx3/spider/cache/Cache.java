@@ -29,11 +29,9 @@ public class Cache {
 	
 	/**
 	 * 将资源加入缓存序列。
-	 * @param rb 要加入的资源
-	 * @return {@link ResourceBean}
 	 * 			<ul>
 	 * 				<li>若加入成功。等待进行缓存，则此处会返回null</li>
-	 * 				<li>若加入失败，因为之前已经缓存过了。也就是已经有当前的缓存文件了。那么将缓存文件中的 {@link ResourceBean}返回 </li>
+	 * 				<li>若加入失败，因为之前已经缓存过了。也就是已经有当前的缓存文件了。那么将缓存文件中的 {@link}返回 </li>
 	 * 			</ul>
 	 */
 	public static synchronized ResourceVO addCache(Resource resource){
@@ -83,16 +81,12 @@ public class Cache {
 		try {
 			FileUtil.downFiles(resource.getNetUrl(), resource.getLocalUrl());
 		}catch(java.io.FileNotFoundException notFind){
-			Global.log("404 File Not Found !  "+resource.getNetUrl());
+			//Global.log("404 File Not Found !  "+resource.getNetUrl());
 		}catch(java.lang.NullPointerException nullE){
-			Global.log("downFile NULL----- "+resource.getNetUrl());
+			//Global.log("downFile NULL----- "+resource.getNetUrl());
 		}catch (Exception e) {
-			Global.log(e.getMessage()+" --- "+resource.getNetUrl());
+			//Global.log(e.getMessage()+" --- "+resource.getNetUrl());
 			e.printStackTrace();
 		}
-	}
-	
-	public static void main(String[] args) throws IOException {
-		FileUtil.downFiles("http://www.xingyucjb.com/Public/Wap/images/b4.png", "/images/js/b4.png");
 	}
 }

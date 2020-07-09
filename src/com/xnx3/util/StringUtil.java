@@ -10,8 +10,6 @@ public class StringUtil {
 
 	/**
 	 * 文章相似度对比。越相似，越接近1
-	 * @param str1
-	 * @param str2
 	 * @return 0~1
 	 */
 	public static double similarity(Element ele1, Element ele2){

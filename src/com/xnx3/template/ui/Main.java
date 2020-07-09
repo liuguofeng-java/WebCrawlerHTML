@@ -5,20 +5,15 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.DefaultCellEditor;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JFileChooser;
-import javax.swing.JPopupMenu;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.table.TableModel;
 import javax.swing.JButton;
 
 import com.xnx3.SystemUtil;
@@ -26,9 +21,6 @@ import com.xnx3.UI;
 import com.xnx3.template.Action;
 import com.xnx3.template.GainTemplateVar;
 import com.xnx3.template.Global;
-import com.xnx3.template.bean.ElementDiffRecord;
-import com.xnx3.template.bean.Template;
-import com.xnx3.util.CheckVersion;
 import com.xnx3.util.ui.Menu;
 
 import java.awt.event.ActionListener;
@@ -39,16 +31,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.EtchedBorder;
 
-import java.beans.VetoableChangeListener;
 import java.io.File;
-import java.util.Map;
 
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;

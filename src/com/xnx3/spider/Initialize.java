@@ -17,7 +17,7 @@ public class Initialize {
 		createCacheFileByPath(path+"js/");
 		createCacheFileByPath(path+"css/");
 	}
-	public static void createCacheFileByPath(String path){
+	private static void createCacheFileByPath(String path){
 		File file = new File(path);
 		if(!file.exists()){
 			file.mkdir();

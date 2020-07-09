@@ -8,7 +8,6 @@ import javax.swing.JMenuItem;
 
 import com.xnx3.SystemUtil;
 import com.xnx3.UI;
-import com.xnx3.util.CheckVersion;
 
 /**
  * 菜单
@@ -28,7 +27,7 @@ public class Menu {
 		mntmNewMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				UI.showMessageDialog(""
-						+ "\n当前版本：v"+com.xnx3.G.VERSION
+						+ "\n当前版本：v"
 						+ "\n作者：管雷鸣"
 						+ "\nQQ：921153866"
 						+ "\n微信：xnx3com"
@@ -51,14 +50,6 @@ public class Menu {
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("检查更新");
 		aboutMenu.add(mntmNewMenuItem_1);
-		mntmNewMenuItem_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if(!CheckVersion.cloudCheck()){
-					UI.showMessageDialog("当前已是最新版本！");
-				}
-			}
-		});
-		
 		return aboutMenu;
 	}
 	

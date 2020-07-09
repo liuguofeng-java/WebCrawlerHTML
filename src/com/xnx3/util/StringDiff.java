@@ -11,14 +11,9 @@ import java.util.regex.Pattern;
 
 import com.xnx3.DateUtil;
 import com.xnx3.Lang;
-import com.xnx3.StringUtil;
 import com.xnx3.SystemUtil;
-import com.xnx3.UI;
 import com.xnx3.file.FileUtil;
 import com.xnx3.template.Global;
-import com.xnx3.template.TemplateCompute;
-import com.xnx3.template.ui.Diff;
-import com.xnx3.template.ui.diffJeditorPanel;
 import com.xnx3.util.stringDiff.ShortStringTrait;
 
 
@@ -253,7 +248,6 @@ public class StringDiff {
 	
 	/**
 	 * 二分法，替换掉长字符串中相同的字符串
-	 * @param duan
 	 * @return 是否可继续进行拆分
 	 */
 	public synchronized boolean dichotomy(){

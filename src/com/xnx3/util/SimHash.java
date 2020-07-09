@@ -32,8 +32,6 @@ public class SimHash {
      * @return
      */
     private String cleanResume(String content) {
-        // 若输入为HTML,下面会过滤掉所有的HTML的tag
-//        content = StringUtils.lowerCase(content);
         String[] strings = {" ", "\n", "\r", "\t", "\\r", "\\n", "\\t", "&nbsp;"};
         for (String s : strings) {
             content = content.replaceAll(s, "");
